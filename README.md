@@ -19,13 +19,6 @@
 - 后端服务运行于 `http://localhost:60624`，提供稳定的 API 支持。
 - 独立完成从需求分析、技术选型到代码实现的全流程开发。
 
-### 📦 项目结构
-
-```text
-gym-project/
-├── gym-management-mini-program/  # 前端小程序代码
-└── server/                       # 后端服务代码
-
 ### 🧰 运行说明
 1.  **启动后端服务**：
     ```bash
@@ -36,3 +29,10 @@ gym-project/
 2.  **启动前端小程序**：
     - 使用微信开发者工具打开 `gym-management-mini-program` 目录。
     - 编译并预览小程序。
+
+### 📦 项目结构
+
+```text
+gym-project/
+├── gym-management-mini-program/  # 前端小程序代码
+└── server/                       # 后端服务代码
