@@ -20,6 +20,8 @@
 - 独立完成从需求分析、技术选型到代码实现的全流程开发。
 
 ### 📦 项目结构
+
+```text
 gym-project/
 ├── gym-management-mini-program/  # 前端小程序代码
 └── server/                       # 后端服务代码
