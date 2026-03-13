@@ -30,9 +30,13 @@
     - 使用微信开发者工具打开 `gym-management-mini-program` 目录。
     - 编译并预览小程序。
 
+📚 相关文档
+- 本项目配套论文：[paper/基于微信小程序的健身房管理系统设计与实现.docx](./paper/基于微信小程序的健身房管理系统设计与实现.docx)
+
 ### 📦 项目结构
 
 ```text
 gym-project/
 ├── gym-management-mini-program/  # 前端小程序代码
 └── server/                       # 后端服务代码
+
