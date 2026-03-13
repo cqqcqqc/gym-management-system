@@ -1,0 +1,77 @@
+.container {
+  padding: 40rpx 30rpx;
+  background: #fff;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1AAD19;
+  margin: 60rpx 0 40rpx;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+  margin-bottom: 30rpx;
+}
+
+.input-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+input {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.placeholder {
+  color: #999;
+}
+
+.password-eye {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+
+.eye-icon {
+  width: 30rpx;
+  height: 24rpx;
+}
+
+.login-btn {
+  background: #1AAD19;
+  color: #fff;
+  font-size: 32rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  margin-top: 80rpx;
+  border: none;
+}
+
+.login-btn[disabled] {
+  background: #E0E0E0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.debug-tip {
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.debug-account {
+  color: #1AAD19;
+  font-weight: 500;
+}

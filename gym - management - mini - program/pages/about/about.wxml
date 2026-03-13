@@ -1,0 +1,11 @@
+<view class="about-container">
+  <view class="logo-group">
+    <image src="/assets/logo.png" class="logo" />
+    <text class="logo-text"></text>
+  </view>
+  <view class="info-section">
+    <text class="version">健身房管理系统版本：V1.0.0</text>
+    <text class="service">客服：400-123-4567</text>
+  </view>
+  <button class="back-btn" bindtap="goBack">返回课程列表</button>
+</view>

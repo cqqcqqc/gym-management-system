@@ -1,0 +1,90 @@
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="user-info">
+      <text class="username">欢迎您，小明！</text>
+  </view>
+  <!-- 热门课程推荐 -->
+  <view class="section hot-course-section">
+      <text class="section-title hot-course-title">热门课程推荐</text>
+      <swiper class="course-swiper" indicator-dots>
+          <swiper-item>
+              <view class="course-item">
+                  <image src="/assets/course/yoga.png" class="course-img" />
+                  <text class="course-desc">瑜伽入门</text>
+              </view>
+          </swiper-item>
+          <swiper-item>
+              <view class="course-item">
+                  <image src="/assets/course/aerobic.png" class="course-img" /> <!-- 假设有氧课程图片路径 -->
+                  <text class="course-desc">有氧健身操</text>
+              </view>
+          </swiper-item>
+          <swiper-item>
+              <view class="course-item">
+                  <image src="/assets/course/strength.png" class="course-img" /> <!-- 假设有氧力量训练课程图片路径 -->
+                  <text class="course-desc">力量训练基础</text>
+              </view>
+          </swiper-item>
+      </swiper>
+  </view>
+  <!-- 核心功能入口 -->
+  <view class="function-buttons">
+      <navigator url="/pages/courseReservation/courseReservation?id=1" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/course.png" class="icon"></image>
+          <text class="btn-text">课程预约</text>
+      </navigator>
+      <navigator url="/pages/fitnessData/fitnessData" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/data.png" class="icon"></image>
+          <text class="btn-text">健身数据</text>
+      </navigator>
+      <navigator url="/pages/feedback/feedback" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/feedback.png" class="icon"></image>
+          <text class="btn-text">运动反馈</text>
+      </navigator>
+      <navigator url="/pages/personalCenter/personalCenter" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/personal.png" class="icon"></image>
+          <text class="btn-text">个人中心</text>
+      </navigator>
+      <navigator url="/pages/payment/payment" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/payment.png" class="icon"></image>
+          <text class="btn-text">支付</text>
+      </navigator>
+      <navigator url="/pages/memberManagement/memberManagement" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/member.png" class="icon"></image>
+          <text class="btn-text">会员管理</text>
+      </navigator>
+      <navigator url="/pages/coachDetail/coachDetail" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/coach.png" class="icon"></image>
+          <text class="btn-text">教练详情</text>
+      </navigator>
+      <navigator url="/pages/activity/activity" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/activity.png" class="icon"></image>
+          <text class="btn-text">活动推广</text>
+      </navigator>
+      <navigator url="/pages/review/review" class="function-btn" hover-class="btn-hover">
+          <image src="/assets/icon/review.png" class="icon"></image>
+          <text class="btn-text">评价</text>
+      </navigator>
+  </view>
+  <!-- 今日运动数据 -->
+  <view class="section data-section">
+      <text class="section-title">今日运动数据</text>
+      <view class="data-box">
+          <view class="data-item">
+              <text class="data-label">运动时长</text>
+              <text class="data-value">60 分钟</text>
+          </view>
+          <view class="data-item">
+              <text class="data-label">消耗卡路里</text>
+              <text class="data-value">300 kcal</text>
+          </view>
+      </view>
+  </view>
+  <!-- 系统通知 -->
+  <view class="section">
+      <text class="section-title">系统通知</text>
+      <view class="notification">
+          <text>新的课程已上线！ 2025-05-15 10:00</text>
+      </view>
+  </view>
+</view>

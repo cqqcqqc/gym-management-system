@@ -1,0 +1,14 @@
+.container {
+  padding: 20rpx;
+}
+
+.data-info {
+  margin-bottom: 30rpx;
+}
+
+.data-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10rpx;
+}

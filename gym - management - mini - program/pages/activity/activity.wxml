@@ -1,0 +1,17 @@
+<view class="activity-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/personalCenter/personalCenter" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">活动推广</text>
+  </view>
+  <!-- 活动信息 -->
+  <view class="activity-info">
+    <image src="{{activity.image}}" class="activity-image"></image>
+    <text class="activity-title">{{activity.title}}</text>
+    <text class="activity-date">{{activity.date}}</text>
+    <text class="activity-intro">{{activity.intro}}</text>
+    <button bindtap="onSignUp" class="sign-up-button">立即报名</button>
+  </view>
+</view>

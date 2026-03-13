@@ -1,0 +1,29 @@
+.container {
+  padding: 20rpx;
+}
+
+.course-info {
+  margin-bottom: 30rpx;
+}
+
+.course-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.course-time, .course-coach {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 5rpx;
+}
+
+.reservation-btn {
+  background: #1AAD19;
+  color: #fff;
+  font-size: 32rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  border: none;
+}

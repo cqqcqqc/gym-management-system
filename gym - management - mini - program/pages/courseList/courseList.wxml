@@ -1,0 +1,21 @@
+<view class="course-list-container">
+  <view class="header">
+    <text class="title">健身房课程列表</text>
+    <navigator url="/pages/about/about" class="about-link">关于</navigator>
+  </view>
+  <view class="course-item" 
+        wx:for="{{courseList}}" 
+        wx:key="id" 
+        bindtap="goToCourseDetail"
+        data-id="{{item.id}}">
+    <image 
+      src="{{item.imageUrl}}" 
+      class="course-item-image" 
+      binderror="imageError" 
+      data-index="{{index}}"
+    ></image>
+    <view class="course-item-content">
+      <text class="course-title">{{item.title}}</text>
+    </view>
+  </view>
+</view>

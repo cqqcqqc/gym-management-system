@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="header">
+    <text class="title">{{course.title}}</text>
+  </view>
+  <image src="{{course.imageUrl}}" mode="widthFix" class="course-image"></image>
+  <text class="desc">{{course.desc}}</text>
+  <view class="course-info">
+    <view class="info-item">
+      <text class="info-label">课程时长：</text>
+      <text class="info-value">{{course.duration}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">授课教练：</text>
+      <text class="info-value">{{course.coach}}</text>
+    </view>
+  </view>
+</view>

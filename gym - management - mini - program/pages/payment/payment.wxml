@@ -1,0 +1,32 @@
+<view class="payment-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/personalCenter/personalCenter" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">支付页面</text>
+  </view>
+  <!-- 支付信息 -->
+  <view class="payment-info">
+    <text class="info-label">课程名称：</text>
+    <text class="info-value">{{courseName}}</text>
+  </view>
+  <view class="payment-info">
+    <text class="info-label">支付金额：</text>
+    <text class="info-value">{{paymentAmount}} 元</text>
+  </view>
+  <!-- 支付方式选择 -->
+  <view class="payment-method">
+    <text class="method-label">支付方式：</text>
+    <radio-group bindchange="onPaymentMethodChange">
+      <label class="radio-label">
+        <radio value="wechat" checked="{{paymentMethod === 'wechat'}}" /> 微信支付
+      </label>
+      <label class="radio-label">
+        <radio value="alipay" checked="{{paymentMethod === 'alipay'}}" /> 支付宝支付
+      </label>
+    </radio-group>
+  </view>
+  <!-- 支付按钮 -->
+  <button bindtap="onPay" class="pay-button">立即支付</button>
+</view>

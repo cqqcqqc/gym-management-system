@@ -1,0 +1,47 @@
+/* pages/fitnessData/fitnessData.wxss */
+.container {
+  padding: 20rpx;
+  background: #f8f8f8;
+}
+
+.section {
+  background: #fff;
+  padding: 32rpx; 
+  border-radius: 24rpx;
+  margin-bottom: 32rpx; 
+}
+
+.section-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 28rpx;
+  color: #2c2c2c;
+}
+
+.data-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.data-item {
+  text-align: center;
+  width: 48%;
+  padding: 20rpx;
+  background: #f8f8f8;
+  border-radius: 24rpx; 
+  margin-bottom: 20rpx;
+}
+
+.data-label {
+  font-size: 26rpx;
+  color: #666; 
+  margin-bottom: 10rpx;
+  display: block; 
+}
+
+.data-value {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #1AAD19; 
+}

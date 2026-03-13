@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="page-title">已预约课程</view>
+  <view class="reserved-course" wx:for="{{reservedCourses}}" wx:key="index">
+    <text class="course-title">{{item.title}}</text>
+    <text class="reservation-info">预约日期：{{item.reservationDate}} 预约时间：{{item.reservationTime}}</text>
+  </view>
+</view>

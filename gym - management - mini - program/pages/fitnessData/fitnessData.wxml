@@ -1,0 +1,42 @@
+<!-- pages/fitnessData/fitnessData.wxml -->
+<view class="container">
+  <view class="section">
+    <text class="section-title">总健身数据</text>
+    <view class="data-box">
+      <view class="data-item">
+        <text class="data-label">总锻炼次数</text>
+        <text class="data-value">{{fitnessData.totalWorkouts}} 次</text>
+      </view>
+      <view class="data-item">
+        <text class="data-label">总锻炼时长</text>
+        <text class="data-value">{{fitnessData.totalDuration}} 分钟</text>
+      </view>
+      <view class="data-item">
+        <text class="data-label">总消耗卡路里</text>
+        <text class="data-value">{{fitnessData.totalCaloriesBurned}} kcal</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">上次健身数据</text>
+    <view class="data-box">
+      <view class="data-item">
+        <text class="data-label">锻炼日期</text>
+        <text class="data-value">{{fitnessData.lastWorkoutDate}}</text>
+      </view>
+      <view class="data-item">
+        <text class="data-label">锻炼类型</text>
+        <text class="data-value">{{fitnessData.lastWorkoutType}}</text>
+      </view>
+      <view class="data-item">
+        <text class="data-label">锻炼时长</text>
+        <text class="data-value">{{fitnessData.lastWorkoutDuration}} 分钟</text>
+      </view>
+      <view class="data-item">
+        <text class="data-label">消耗卡路里</text>
+        <text class="data-value">{{fitnessData.lastWorkoutCalories}} kcal</text>
+      </view>
+    </view>
+  </view>
+</view>

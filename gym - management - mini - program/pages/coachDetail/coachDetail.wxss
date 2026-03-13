@@ -1,0 +1,93 @@
+.coach-detail-container {
+  padding: 20rpx;
+  background-color: #f4f4f4;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  padding: 0 10rpx;
+}
+
+.back-icon {
+  margin-right: 15rpx;
+}
+
+.back-img {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  color: #007aff;
+  font-weight: 700;
+}
+
+.coach-info {
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.coach-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+
+.coach-name {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5rpx;
+}
+
+.coach-title {
+  font-size: 26rpx;
+  color: #555;
+  margin-bottom: 10rpx;
+}
+
+.coach-intro {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.coach-courses {
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.25);
+}
+
+.courses-title {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.course-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.course-name {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.course-price {
+  font-size: 26rpx;
+  color: #555;
+  margin-top: 5rpx;
+}

@@ -1,0 +1,51 @@
+.container {
+  padding: 40rpx 32rpx;
+  background: #f5f5f5;
+}
+.title {
+  font-size: 40rpx;
+  color: #2c2c2c;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+.course-image {
+  border-radius: 30rpx;
+  box-shadow: 0 24rpx 48rpx rgba(0, 0, 0, 0.18);
+  margin-bottom: 50rpx;
+}
+.desc {
+  font-size: 34rpx;
+  color: #666;
+  line-height: 1.8;
+  text-align: justify; 
+  word-wrap: break-word; 
+  margin-bottom: 50rpx;
+  letter-spacing: 1rpx; 
+  padding: 0 10rpx; 
+  white-space: nowrap; /* 强制文字不换行，保持一行 */
+  overflow: hidden; /* 隐藏超出容器的文字 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+.course-info {
+  background: #fff;
+  padding: 40rpx 32rpx;
+  border-radius: 28rpx;
+  box-shadow: 0 16rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+.info-item {
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 28rpx;
+}
+.info-label {
+  font-size: 32rpx;
+  color: #555;
+  width: 200rpx;
+  line-height: 1.6; 
+}
+.info-value {
+  font-size: 32rpx;
+  color: #333;
+  flex: 1;
+  line-height: 1.6; 
+}

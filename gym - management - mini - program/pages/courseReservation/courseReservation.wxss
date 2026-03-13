@@ -1,0 +1,127 @@
+.container {
+  padding: 20rpx;
+  background-color: #f4f4f4;
+}
+
+.course-info {
+  background-color: white;
+  border-radius: 20rpx;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-header {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.course-image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 15rpx;
+  margin-right: 20rpx;
+}
+
+.course-title-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 5rpx;
+  line-height: 1.2;
+}
+
+.course-desc {
+  font-size: 26rpx;
+  color: #555;
+  line-height: 1.2;
+}
+
+.course-details {
+  padding: 0 20rpx 20rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.info-label {
+  width: 150rpx;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 24rpx;
+}
+
+.info-value {
+  color: #555;
+  line-height: 1.4;
+  font-size: 24rpx;
+}
+
+.reservation-section {
+  padding: 20rpx;
+}
+
+.reservation-date,
+.reservation-time {
+  margin-bottom: 18rpx;
+}
+
+.label {
+  display: block;
+  color: #333;
+  margin-bottom: 6rpx;
+  font-weight: 600;
+  font-size: 24rpx;
+}
+
+.picker {
+  border: 1px solid #ccc;
+  border-radius: 6rpx;
+  padding: 12rpx;
+  color: #555;
+  width: 100%;
+  font-size: 24rpx;
+}
+
+.reservation-btn {
+  background-color: #00b359;
+  color: white;
+  width: 100%;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.reservation-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.view-reserved-btn {
+  background-color: #007aff;
+  color: white;
+  width: 100%;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}

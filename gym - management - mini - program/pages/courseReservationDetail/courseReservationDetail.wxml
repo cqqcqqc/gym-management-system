@@ -1,0 +1,11 @@
+<view class="container">
+  <!-- 课程信息 -->
+  <view class="course-info">
+      <text class="course-title">课程名称：{{courseName}}</text>
+      <text class="course-time">课程时间：{{courseTime}}</text>
+      <text class="course-coach">授课教练：{{coachName}}</text>
+  </view>
+
+  <!-- 预约按钮 -->
+  <button class="reservation-btn" bindtap="handleReservation">立即预约</button>
+</view>

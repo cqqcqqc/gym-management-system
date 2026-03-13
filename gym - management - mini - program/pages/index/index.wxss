@@ -1,0 +1,125 @@
+.container {
+  padding: 20rpx;
+  background: #f8f8f8;
+}
+.user-info {
+  margin: 30rpx 0;
+  text-align: center;
+}
+.username {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+.function-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30rpx 0 40rpx;
+}
+.function-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  padding: 20rpx;
+  background: #f9f9f9;
+  border-radius: 30rpx;
+  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s;
+  margin-bottom: 20rpx;
+}
+.function-btn:hover {
+  transform: translateY(-2rpx);
+}
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.btn-text {
+  font-size: 20rpx;
+  color: #333;
+  text-align: center;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section {
+  background: #f8f8f8;
+  padding: 32rpx; 
+  border-radius: 24rpx;
+  margin-bottom: 32rpx; 
+}
+.hot-course-section {
+  background: #ffffff;
+  padding: 40rpx;
+  border-radius: 30rpx;
+  margin: 60rpx 0;
+  box-shadow: 0 12rpx 24rpx rgba(0, 0, 0, 0.15);
+}
+.hot-course-title {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #007aff;
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+.course-swiper {
+  height: 400rpx; /* 增加高度，给文字留出显示空间 */
+}
+.course-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course-img {
+  width: 100%;
+  height: 320rpx;
+  object-fit: cover;
+  border-radius: 25rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.course-desc {
+  font-size: 32rpx;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+  max-width: 100%; /* 防止文字超出容器 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.data-section {
+  padding: 28rpx 40rpx;
+}
+.data-box {
+  display: flex;
+  justify-content: space-between;
+}
+.data-item {
+  text-align: center;
+  width: 48%;
+  padding: 32rpx;
+  background: #f8f8f8;
+  border-radius: 24rpx; 
+}
+.data-label {
+  font-size: 26rpx;
+  color: #666; 
+  margin-bottom: 10rpx;
+  display: block; 
+}
+.data-value {
+  font-size: 30rpx; 
+  font-weight: 700;
+  color: #1AAD19; 
+}
+.data-value::after {
+  content: "";
+  margin-left: 5rpx;
+}
+.notification {
+  font-size: 26rpx;
+  color: #666;
+}

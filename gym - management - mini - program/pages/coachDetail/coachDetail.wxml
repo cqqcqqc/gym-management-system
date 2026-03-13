@@ -1,0 +1,24 @@
+<view class="coach-detail-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/personalCenter/personalCenter" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">教练详情</text>
+  </view>
+  <!-- 教练信息 -->
+  <view class="coach-info">
+    <image src="{{coach.avatar}}" class="coach-avatar"></image>
+    <text class="coach-name">{{coach.name}}</text>
+    <text class="coach-title">{{coach.title}}</text>
+    <text class="coach-intro">{{coach.intro}}</text>
+  </view>
+  <!-- 教练课程列表 -->
+  <view class="coach-courses">
+    <text class="courses-title">教练课程</text>
+    <view class="course-item" wx:for="{{coach.courses}}" wx:key="id">
+      <text class="course-name">{{item.name}}</text>
+      <text class="course-price">{{item.price}} 元</text>
+    </view>
+  </view>
+</view>

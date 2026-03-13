@@ -1,0 +1,33 @@
+<view class="member-management-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/personalCenter/personalCenter" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">会员管理</text>
+    <button bindtap="addMember" class="add-button">新增会员</button>
+  </view>
+  <!-- 会员信息列表 -->
+  <view class="member-list">
+    <view class="member-item" wx:for="{{memberList}}" wx:key="id">
+      <text class="member-name">{{item.name}}</text>
+      <text class="member-level">会员等级：{{item.level}}</text>
+      <text class="member-remaining-times">剩余课程次数：{{item.remainingTimes}}</text>
+      <button bindtap="editMember" data-id="{{item.id}}" class="edit-button">编辑</button>
+      <button bindtap="deleteMember" data-id="{{item.id}}" class="delete-button">删除</button>
+    </view>
+  </view>
+  <!-- 新增/编辑会员模态框 -->
+  <view wx:if="{{isShowModal}}" class="modal-mask" bindtap="hideModal">
+    <view class="modal-container">
+      <view class="modal-title">{{isEdit ? '编辑会员信息' : '新增会员信息'}}</view>
+      <input type="text" placeholder="请输入会员姓名" bindinput="handleInputChange" data-field="name" value="{{tempMember.name}}" class="modal-input" />
+      <input type="text" placeholder="请输入会员等级" bindinput="handleInputChange" data-field="level" value="{{tempMember.level}}" class="modal-input" />
+      <input type="number" placeholder="请输入剩余课程次数" bindinput="handleInputChange" data-field="remainingTimes" value="{{tempMember.remainingTimes}}" class="modal-input" />
+      <view class="modal-buttons">
+        <button bindtap="saveMember" class="save-button">{{isEdit ? '保存修改' : '保存新增'}}</button>
+        <button bindtap="hideModal" class="cancel-button">取消</button>
+      </view>
+    </view>
+  </view>
+</view>

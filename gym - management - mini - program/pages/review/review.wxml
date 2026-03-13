@@ -1,0 +1,35 @@
+<view class="review-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/personalCenter/personalCenter" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">评价页面</text>
+  </view>
+  <!-- 评价表单 -->
+  <form bindsubmit="onSubmitReview">
+    <view class="form-item">
+      <label class="form-label">课程名称：</label>
+      <input type="text" placeholder="请输入课程名称" name="courseName" class="form-input" />
+    </view>
+    <view class="form-item">
+      <label class="form-label">评价内容：</label>
+      <textarea placeholder="请输入评价内容" name="reviewContent" class="form-textarea"></textarea>
+    </view>
+    <view class="form-item">
+      <label class="form-label">评分：</label>
+      <picker mode="selector" range="{{ratingRange}}" bindchange="onRatingChange" value="{{ratingIndex}}">
+        <view class="picker-view">{{ratingRange[ratingIndex]}} 分</view>
+      </picker>
+    </view>
+    <button formType="submit" class="submit-button">提交评价</button>
+  </form>
+  <!-- 评价列表 -->
+  <view class="review-list">
+    <view class="review-item" wx:for="{{reviewList}}" wx:key="id">
+      <text class="review-course-name">{{item.courseName}}</text>
+      <text class="review-content">{{item.reviewContent}}</text>
+      <text class="review-rating">评分：{{item.rating}} 分</text>
+    </view>
+  </view>
+</view>

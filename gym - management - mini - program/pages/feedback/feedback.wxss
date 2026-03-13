@@ -1,0 +1,42 @@
+/* pages/feedback/feedback.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.input-group {
+  margin-bottom: 30rpx;
+}
+
+.label {
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+}
+
+.textarea {
+  border: 1px solid #e5e5e5;
+  padding: 20rpx;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+
+.input {
+  border: 1px solid #e5e5e5;
+  padding: 20rpx;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+
+.submit-btn {
+  background-color: #1AAD19;
+  color: #fff;
+  padding: 20rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}
+
+.submit-btn[disabled] {
+  opacity: 0.6;
+}

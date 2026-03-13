@@ -1,0 +1,28 @@
+<!-- pages/feedback/feedback.wxml -->
+<view class="container">
+  <view class="input-group">
+      <text class="label">反馈内容</text>
+      <textarea
+          placeholder="请输入您的运动反馈内容"
+          bindinput="handleFeedbackInput"
+          value="{{feedbackContent}}"
+          class="textarea"
+      ></textarea>
+  </view>
+  <view class="input-group">
+      <text class="label">联系方式（选填）</text>
+      <input
+          placeholder="请输入您的联系方式"
+          bindinput="handleContactInput"
+          value="{{contactInfo}}"
+          class="input"
+      />
+  </view>
+  <button
+      bindtap="submitFeedback"
+      disabled="{{isSubmitting}}"
+      class="submit-btn"
+  >
+      {{isSubmitting ? '提交中...' : '提交反馈'}}
+  </button>
+</view>

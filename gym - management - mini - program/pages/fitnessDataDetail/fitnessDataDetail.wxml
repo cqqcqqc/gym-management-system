@@ -1,0 +1,8 @@
+<view class="container">
+  <!-- 数据信息 -->
+  <view class="data-info">
+      <text class="data-title">体重：{{weight}} kg</text>
+      <text class="data-title">体脂率：{{bodyFatRate}} %</text>
+      <text class="data-title">运动时长：{{exerciseTime}} 分钟</text>
+  </view>
+</view>

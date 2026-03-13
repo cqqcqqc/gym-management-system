@@ -1,0 +1,44 @@
+<view class="container">
+  <!-- 课程信息展示循环 -->
+  <view class="course-info" wx:for="{{courses}}" wx:key="index">
+    <view class="course-header">
+      <image src="/assets/course/{{item.imageUrl}}" mode="widthFix" class="course-image"></image>
+      <view class="course-title-desc">
+        <text class="course-title">{{item.title}}</text>
+        <text class="course-desc">{{item.desc}}</text>
+      </view>
+    </view>
+    <view class="course-details">
+      <view class="info-item">
+        <text class="info-label">课程时长：</text>
+        <text class="info-value">{{item.duration}}</text>
+      </view>
+      <view class="info-item">
+        <text class="info-label">授课教练：</text>
+        <text class="info-value">{{item.coach}}</text>
+      </view>
+    </view>
+    <view class="reservation-section">
+      <!-- 预约日期选择 -->
+      <view class="reservation-date">
+        <text class="label">预约日期：</text>
+        <picker mode="date" value="{{item.reservationDate}}" start="{{minDate}}" end="{{maxDate}}" bindchange="functionName('{{index}}', 'date')">
+          <view class="picker">
+            {{item.reservationDate}}
+          </view>
+        </picker>
+      </view>
+      <!-- 预约时间选择 -->
+      <view class="reservation-time">
+        <text class="label">预约时间：</text>
+        <picker mode="time" value="{{item.reservationTime}}" bindchange="functionName('{{index}}', 'time')">
+          <view class="picker">
+            {{item.reservationTime}}
+          </view>
+        </picker>
+      </view>
+      <!-- 预约按钮 -->
+      <button class="reservation-btn" bindtap="submitReservation" data-index="{{index}}">提交预约</button>
+    </view>
+  </view>
+</view>

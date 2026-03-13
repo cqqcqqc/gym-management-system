@@ -1,0 +1,40 @@
+<view class="personal-container">
+  <!-- 顶部导航 -->
+  <view class="top-nav">
+    <navigator url="/pages/index/index" class="back-icon">
+      <image src="/assets/icon/back.png" class="back-img"></image>
+    </navigator>
+    <text class="title">个人中心</text>
+  </view>
+  <!-- 用户头像和昵称 -->
+  <view class="user-profile">
+    <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+    <text class="nickname">{{userInfo.nickname}}</text>
+  </view>
+  <!-- 用户信息展示 -->
+  <view class="user-info-section">
+    <view class="info-item">
+      <text class="info-label">会员等级：</text>
+      <text class="info-value">{{userInfo.memberLevel}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">累计运动时长：</text>
+      <text class="info-value">{{userInfo.totalExerciseTime}} 分钟</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">剩余课程次数：</text>
+      <text class="info-value">{{userInfo.remainingCourseTimes}} 次</text>
+    </view>
+  </view>
+  <!-- 设置选项 -->
+  <view class="settings-section">
+    <navigator url="/pages/settings/settings" class="setting-item" hover-class="setting-item-hover"> <!-- 修改跳转路径 -->
+      <text class="setting-icon-desc">设置账户相关信息</text>
+      <image src="/assets/icon/setting.png" class="setting-icon"></image>
+    </navigator>
+    <navigator url="/pages/feedback/feedback" class="setting-item" hover-class="setting-item-hover">
+      <text class="setting-icon-desc">提交反馈与建议</text>
+      <image src="/assets/icon/feedback.png" class="setting-icon"></image>
+    </navigator>
+  </view>
+</view>

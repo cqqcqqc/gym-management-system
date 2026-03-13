@@ -1,0 +1,45 @@
+.about-container {
+  padding: 60rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+.logo-group {
+  margin-bottom: 50rpx;
+  text-align: center;
+}
+.logo {
+  width: 240rpx;
+  height: 240rpx;
+}
+.logo-text {
+  font-size: 36rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.info-section {
+  margin-bottom: 70rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15rpx; /* 控制版本与客服文字的垂直间距 */
+}
+.version, .service {
+  font-size: 32rpx;
+  color: #666;
+}
+.back-btn {
+  background: #1AAD19;
+  color: white;
+  padding: 18rpx 120rpx;
+  border-radius: 50rpx;
+  width: 100%;
+  max-width: 500rpx;
+  white-space: nowrap;
+  box-shadow: 0 12rpx 24rpx rgba(26, 173, 25, 0.3);
+  transition: transform 0.1s;
+}
+.back-btn:active {
+  transform: scale(0.96);
+}
