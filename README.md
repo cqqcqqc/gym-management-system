@@ -21,18 +21,18 @@
 
 ### 📦 项目结构
 
-'''text
+```text
 gym-project/
 ├── gym-management-mini-program/  # 前端小程序代码
 └── server/                       # 后端服务代码
 
 ### 🧰 运行说明
 1.  **启动后端服务**：
-    '''bash
+    ```bash
     cd server
     node server.js
     # 服务运行于 http://localhost:60624
-    '''
+    ```
 2.  **启动前端小程序**：
     - 使用微信开发者工具打开 `gym-management-mini-program` 目录。
     - 编译并预览小程序。
